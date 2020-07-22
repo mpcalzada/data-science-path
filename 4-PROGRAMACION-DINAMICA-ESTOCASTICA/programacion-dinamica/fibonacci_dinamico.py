@@ -5,6 +5,7 @@ def fibonacci_recursivo(n):
 
 
 def fibonacci_dinamico(n, memo={}):
+    print(f'fibonacci_dinamico({n}) | Memo(ID): {id(memo)} | Value: {memo}')
     if n == 0 or n == 1:
         return 1
     try:
